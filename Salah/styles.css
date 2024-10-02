@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Old English Text MT', serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 110%;
+}
+
+.main-menu {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.main-menu h1 {
+    font-size: 2.5rem;
+}
+
+.game-title {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    text-align: right;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.options ul {
+    list-style: none;
+    text-align: center;
+}
+
+.options li {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: grey;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.options li.active {
+    color: white;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.options li.disabled {
+    color: grey;
+}
+
+.info {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+}
+
+
+
