@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="stylesheet.css">
+<a href="script.js"></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC demo</title>
+    <style> 
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        margin-bottom: 150px;
+      }
+    </style>
+</head>
+<body>
+    <div class="backgroundMainMenu"></div>
+  <audio src="https://vgmdownloads.com/soundtracks/minecraft/yplmcdlu/Volume%20Alpha%20-%2011%20-%20Mice%20on%20Venus.mp3" preload="auto" loop="true" autoplay></audio>
+  <div class="mainMenu">
+    <div class="logo">
+      <img src="recoures/minecr10.png" alt="png">
+      <div class="subtitle" id="quote">The only limit is your imgination</div>
+    </div>
+    <div class="mn1">
+      <a><div class="mainBtn" onclick="btnMinecraft();">
+        <div class="textBtn">
+          Play Demo
+        </div>
+      </div>
+      </div>
+      <div class="secondBtn" onclick="btnMinecraft();">
+        <div class="textBtn">
+          Quit Game
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="btnAudioClick" type="audio/mpeg" src="https://cdn.discordapp.com/attachments/639163306749198356/681612670016815134/minecraft_click-AudioTrimmer.com.mp3"></audio>
+</body>
+</html>
