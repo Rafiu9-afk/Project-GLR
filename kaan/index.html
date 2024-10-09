@@ -1,11 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="video-container">
+    <video autoplay loop>
+        <source src="Metal Gear Solid 3 - CQC title screen (NO LOGOS).mp4" type="video/mp4">
+      </video>
+      </div>
     
-</body>
+      <div class="overlay">
+        <!-- Logo Section -->
+        <div class="logo">
+            <div>Tactical Espionage Action</div>
+            <div class="title">METAL GEAR SOLID <span class="triangle-replacement">3</span></div>
+            <div class="subtitle">SNAKE EATER</div>
+        </div>
+
+        <button class="start-button" onclick="startGame()">
+          Start Game
+      </button>
+  </div>
+    </div>
+
+        <!-- Back to Main Page Button -->
+        <button class="back-button" onclick="goToMainPage()">
+          Back to Main Page
+      </button>
+      <audio id="startSound" src="1.mp3"></audio>
+  </div>
+</div>
 </html>
