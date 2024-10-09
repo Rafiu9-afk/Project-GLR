@@ -1,19 +1,20 @@
-
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-image: url('Images/gta san andreas.jpg'); /* Update this with the correct path */
+    background-size: cover;
+    background-position: center;
     font-family: 'Old English Text MT', serif;
-    margin: 0;
+    color: rgb(255, 255, 255);
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+}
 
 .container {
     position: relative;
@@ -22,9 +23,10 @@ body {
 }
 
 .main-menu {
+    color: black;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 5%; /* Positioneer naar boven */
+    left: 5%; /* Positioneer naar links */
 }
 
 .main-menu h1 {
@@ -52,36 +54,59 @@ body {
     text-align: center;
 }
 
+/* Animatie definitie */
+@keyframes fade-in-out {
+    0% {
+        opacity: 1; /* Volledige zichtbaarheid */
+    }
+    50% {
+        opacity: 0; /* Vervagen naar onzichtbaar */
+    }
+    100% {
+        opacity: 1; /* Terug naar volledige zichtbaarheid */
+    }
+}
+
+/* Stijl voor de opties */
 .options li {
     font-size: 2rem;
     margin: 10px 0;
-    color: grey;
-    text-transform: uppercase;
     cursor: pointer;
     position: relative;
 }
 
+/* Specifieke stijl voor actieve optie "Options" */
 .options li.active {
-    color: white;
+    color: rgb(0, 0, 0);
     border: 2px solid green;
     padding: 5px;
     border-radius: 5px;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 3px #ffffff;
+    animation: fade-in-out 2s infinite; /* Voeg animatie toe voor "Options" */
 }
 
+/* Link stijl */
+.options li a,
+.info h3 a {
+    color: black; /* Kleur van de link */
+    text-decoration: none; /* Verwijder de onderstreping van de link */
+    display: block; /* Zorg ervoor dat de hele li klikbaar is */
+}
+
+*/
+
+
 .options li.disabled {
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 
 .info {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
+    bottom: 5%; /* Positioneer naar beneden */
+    left: 5%; /* Positioneer naar links */
 }
 
 .info h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
-
-
 
