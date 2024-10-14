@@ -1,79 +1,90 @@
+/* Full-page background image */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('resources/sonic_background.jpg'); /* Replace with your background image */
+    background-size: 150%; /* Zoom the background */
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: moveBackground 20s linear infinite;
     height: 100vh;
+    overflow: hidden; /* Prevent scrollbars when Sonic moves off-screen */
 }
 
-.container {
-    text-align: center;
+/* Keyframes for moving the background from left to right */
+@keyframes moveBackground {
+    0% {
+        background-position: -2000px 0; /* Start further to the left */
+    }
+    100% {
+        background-position: 0 0; /* Move to the original position */
+    }
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.logo img {
-    width: 80px;
-}
-
-.stars {
-    display: flex;
-    gap: 10px;
-}
-
-.star {
-    font-size: 24px;
-    color: gray;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#start-btn {
-    background-color: gray;
-    color: black;
-    font-size: 24px;
-    padding: 10px 50px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    cursor: pointer;
-}
-
-#start-btn:hover {
-    background-color: #333;
-    color: white;
-}
-
+/* Sonic's plane container */
 .plane-container {
-    position: relative;
-}
-
-.plane {
-    width: 300px;
-}
-
-.character {
     position: absolute;
+    top: 50%;
+    transform: translateY(-100%); /* Vertically center the plane */
+    animation: movePlane 10s linear infinite; /* Moves Sonic across the screen */
+
+
 }
 
-.sonic {
-    top: -50px;
-    left: 150px;
+.sonic-logo {
+    position: absolute;
+    top: 20px; /* Adjust this value to move it down from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 1000px; /* Adjust width as needed */
+    height: 900px; /* Keep aspect ratio */
 }
 
-.tails {
-    top: 20px;
-    left: 100px;
+/* Sonic's plane animation */
+@keyframes movePlane {
+    0% {
+        left: 100vw; /* Start off the right side */
+    }
+    90% {
+        left: -200px; /* Move across the screen to the left */
+    }
+    100% {
+        left: -350px; /* End off the left side */
+    }
+}
+
+/* Start Game button styling */
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 180%); /* Center the button */
+    padding: 30px 60px;
+    font-size: 48px;
+    font-family: 'Press Start 2P', cursive; /* Sonic-like font from Google */
+    color: #ffffff;
+    background-color: red; /* Button color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeEffect 2s infinite; /* Fading animation */
+}
+
+/* Fade effect for the button */
+@keyframes fadeEffect {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.5; /* Fading out */
+    }
+}
+
+/* Stop fading on hover */
+.start-button:hover {
+    background-color: red; /* Darker blue on hover */
+    animation: none; /* Stop fading effect */
+    opacity: 1;
 }
