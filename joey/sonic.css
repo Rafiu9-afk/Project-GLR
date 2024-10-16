@@ -1,90 +1,84 @@
-/* Full-page background image */
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url('resources/sonic_background.jpg'); /* Replace with your background image */
-    background-size: 150%; /* Zoom the background */
+    background-image: url('resources/sonic_background.jpg'); 
+    background-size: 150%; 
     background-position: 0 0;
     background-repeat: repeat-x;
     animation: moveBackground 20s linear infinite;
     height: 100vh;
-    overflow: hidden; /* Prevent scrollbars when Sonic moves off-screen */
+    overflow: hidden; 
 }
 
-/* Keyframes for moving the background from left to right */
+
 @keyframes moveBackground {
     0% {
-        background-position: -2000px 0; /* Start further to the left */
+        background-position: -2000px 0; 
     }
     100% {
-        background-position: 0 0; /* Move to the original position */
+        background-position: 0 0; 
     }
 }
 
-/* Sonic's plane container */
+
 .plane-container {
     position: absolute;
     top: 50%;
-    transform: translateY(-100%); /* Vertically center the plane */
-    animation: movePlane 10s linear infinite; /* Moves Sonic across the screen */
-
-
+    transform: translateY(-100%); 
+    animation: movePlane 10s linear infinite;
 }
 
 .sonic-logo {
     position: absolute;
-    top: 20px; /* Adjust this value to move it down from the top */
+    top: 20px; 
     left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
-    width: 1000px; /* Adjust width as needed */
-    height: 900px; /* Keep aspect ratio */
+    transform: translateX(-50%); 
+    height: 900px; 
 }
 
-/* Sonic's plane animation */
+
 @keyframes movePlane {
     0% {
-        left: 100vw; /* Start off the right side */
+        left: 100vw; 
     }
     90% {
-        left: -200px; /* Move across the screen to the left */
+        left: -200px; 
     }
     100% {
-        left: -350px; /* End off the left side */
+        left: -350px; 
     }
 }
 
-/* Start Game button styling */
+
 .start-button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 180%); /* Center the button */
-    padding: 30px 60px;
+    transform: translate(-50%, 180%); 
     font-size: 48px;
-    font-family: 'Press Start 2P', cursive; /* Sonic-like font from Google */
+    font-family: 'Press Start 2P', cursive; 
     color: #ffffff;
-    background-color: red; /* Button color */
+    background-color: red; 
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     text-align: center; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeEffect 2s infinite; /* Fading animation */
+    animation: fadeEffect 2s infinite; 
 }
 
-/* Fade effect for the button */
+
 @keyframes fadeEffect {
     0%, 100% {
-        opacity: 1; /* Fully visible */
+        opacity: 1; 
     }
     50% {
-        opacity: 0.5; /* Fading out */
+        opacity: 0.5; 
     }
 }
 
-/* Stop fading on hover */
 .start-button:hover {
-    background-color: red; /* Darker blue on hover */
-    animation: none; /* Stop fading effect */
-    opacity: 1;
+    background-color: red; 
+    animation: none; 
 }
