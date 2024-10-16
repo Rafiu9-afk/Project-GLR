@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'SonicFont';
-    src: url('sonic-font.ttf'); 
-}
+
 
 body, html {
     margin: 0;
@@ -11,7 +8,40 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-family: 'YourFontName', sans-serif; 
+   
+}
+
+.sonic-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sonic {
+    width: 150px; 
+}
+
+.text-box {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: bounce 1.5s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 
@@ -24,11 +54,12 @@ body, html {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    background-repeat: repeat-x;
 }
 .ring {
     position: relative;
     width: 50px; 
-    height: 80px;
+    height: 50px;
     cursor: pointer; 
     transition: width 0.3s, height 0.3s; 
 }
@@ -43,11 +74,74 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: black; 
-    background-color: white;
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0 #000000, 
+                 -2px 2px 0 #000000, 
+                 2px -2px 0 #000000, 
+                 -2px -2px 0 #000000;
     display: none; 
+    z-index: 0;
 }
+
+.tails-container {
+    position: absolute;
+    top: 25%;
+    left: -200px; 
+}
+
+.tails {
+    width: 150px; 
+    position: relative;
+    display: none; 
+    transition: left 1s ease-in-out;
+}
+
+
+.fly-in {
+    display: block; 
+    animation: fly 2s ease-in-out forwards;
+}
+
+@keyframes fly {
+    0% {
+        left: -200px; 
+    }
+    100% {
+        left: 500px; 
+    }
+}
+
+
+.knuckles-container {
+top: 60%;   
+    position: absolute;
+    bottom: 0; 
+    left: -200px; 
+}
+
+.knuckles {
+    width: 150px; 
+    position: relative;
+    display: none; 
+    transition: left 1s ease-in-out;
+}
+
+
+.run-in {
+    display: block; 
+    animation: run 2s ease-in-out forwards;
+}
+
+@keyframes run {
+    0% {
+        left: -200px; 
+    }
+    100% {
+        left: 350px; 
+    }
+}
+
 
 
 

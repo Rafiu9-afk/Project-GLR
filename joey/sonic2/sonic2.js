@@ -6,8 +6,8 @@ let isLarge = false;
 ring.addEventListener('click', () => {
     if (!isLarge) {
         
-        ring.style.width = '600px'; 
-        ring.style.height = '500px'; 
+        ring.style.width = '700px'; 
+        ring.style.height = '600px'; 
         ringText.style.display = 'block'; 
     } else {
        
@@ -17,3 +17,18 @@ ring.addEventListener('click', () => {
     }
     isLarge = !isLarge; 
 });
+
+document.getElementById("ring").addEventListener("click", function() {
+    
+    var tails = document.getElementById("tails");
+    if (!tails.classList.contains('fly-in')) {
+        tails.classList.add('fly-in');
+    }
+
+   
+    var knuckles = document.getElementById("knuckles");
+    if (!knuckles.classList.contains('run-in')) {
+        knuckles.classList.add('run-in');
+    }
+});
+
