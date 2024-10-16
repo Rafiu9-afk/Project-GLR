@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script3.js"></script>
+    <link rel="stylesheet" href="styelesheet3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Quiz</title>
+</head>
+
+   
+<body>
+   
+   
+   
+   
+   <form id="quizForm">
+        <div class="question">
+            <h2>Minecraft is ontwikkeld in </h2>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="a"> 2009</label>
+                <label><input type="radio" name="q1" value="b"> 2010</label>
+                <label><input type="radio" name="q1" value="c"> 2011</label>
+                <label><input type="radio" name="q1" value="d"> 2012</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Welk monster heeft het meest HP in Minecraft</h2>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="a"> Warden</label>
+                <label><input type="radio" name="q2" value="b"> Ender Dragon</label>
+                <label><input type="radio" name="q2" value="c"> Wither</label>
+                <label><input type="radio" name="q2" value="d"> Ravager</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Voor hoeveel heeft microsoft minecraft gekocht</h2>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="a"> 3,25 milijard</label>
+                <label><input type="radio" name="q3" value="b"> 2,5 milijard</label>
+                <label><input type="radio" name="q3" value="c"> 8,25 milijard</label>
+                <label><input type="radio" name="q3" value="d"> 6,5 milijard</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Wat voor game is Minecraft</h2>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="a"> Rpg</label>
+                <label><input type="radio" name="q4" value="b"> Platformer</label>
+                <label><input type="radio" name="q4" value="c"> Sandbox</label>
+                <label><input type="radio" name="q4" value="d"> Fps</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="showResult()">Submit</button>
+
+        <div id="result" class="result">
+            Je score: <span id="score">0</span>/4
+        </div>
+    </form>
+</div>
+</body>
+</html>
