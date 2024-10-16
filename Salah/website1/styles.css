@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('Images/gta san andreas.jpg'); /* Update this with the correct path */
+    background-image: url('/Salah/Images/gta\ san\ andreas.jpg'); /* Update this with the correct path */
     background-size: cover;
     background-position: center;
     font-family: 'Old English Text MT', serif;
@@ -21,6 +21,12 @@ body {
     width: 100%;
     height: 110%;
 }
+#start{
+    color: black;
+    
+}
+
+
 
 .main-menu {
     color: black;
