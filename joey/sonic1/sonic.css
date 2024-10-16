@@ -1,0 +1,86 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/joey/resources/sonic_background.jpg'); 
+    background-size: 150%; 
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: moveBackground 20s linear infinite;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: -2000px 0; 
+    }
+    100% {
+        background-position: 0 0; 
+    }
+}
+
+
+.plane-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%); 
+    animation: movePlane 10s linear infinite;
+}
+
+.sonic-logo {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 800px; 
+    width: 1000px;
+}
+
+
+@keyframes movePlane {
+    0% {
+        left: 100vw; 
+    }
+    90% {
+        left: -200px; 
+    }
+    100% {
+        left: -350px; 
+    }
+}
+
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 180%); 
+    font-size: 48px;
+    font-family: 'Press Start 2P', cursive; 
+    color: #ffffff;
+    background-color: red; 
+    border: none;
+    border-radius: 0px;
+    text-decoration: none; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeEffect 2s infinite; 
+    padding: 10px 50px
+}
+
+
+@keyframes fadeEffect {
+    0%, 100% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+}
+
+.start-button:hover {
+    background-color: red; 
+    animation: none; 
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  background-image:url('/Salah/Images/2151151-3840x2160-desktop-4k-gta-san-andreas-wallpaper-photo.jpg');
+  background-position: center;
+  background-size: cover;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Position the options text in the top left */
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 3.0em;
+    text-transform: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Menu style */
+.menu {
+    text-align: left;
+    position: relative;
+    width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    color: #5f5f5f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 20px;
+    background-color: #5f5f5f;
+}
+
+.menu-item.active::before {
+    background-color: #00ff00;
+}
+
+/* Position Main menu at bottom left */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    
+}
+
+.main-menu-link {
+    color: rgb(0, 0, 0);
+    font-size: 3.0em;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+}
+
+.main-menu-link:hover {
+    color: #00ff00;
+    text-decoration: underline;
+}
