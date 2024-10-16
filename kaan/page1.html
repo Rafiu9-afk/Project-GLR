@@ -11,25 +11,25 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            background-color: #282c34; /* Background color */
+            background-color: #282c34;
             color: white;
             font-family: Arial, sans-serif;
         }
 
         header {
             display: flex;
-            align-items: center; /* Center vertically */
-            justify-content: space-between; /* Space out logo and buttons */
-            width: 100%; /* Full width */
-            max-width: 800px; /* Maximum width for the header */
-            margin-bottom: 20px; /* Space below the header */
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
         }
 
         .logo img {
-            width: 80%; /* Responsive logo size */
-            max-width: 400px; /* Increased maximum width for the logo */
+            width: 80%;
+            max-width: 400px;
             margin: 20px;
         }
 
@@ -37,25 +37,76 @@
             padding: 15px 25px;
             font-size: 18px;
             font-weight: bold;
-            background-color: #61dafb; /* Button color */
+            background-color: #61dafb;
             color: black;
             text-transform: uppercase;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
-            margin: 0 10px; /* Space between buttons */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0 10px;
         }
 
         .button:hover {
-            background-color: #21a1f1; /* Darker shade on hover */
-            color: white; /* Change text color on hover */
+            background-color: #21a1f1;
+            color: white;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        .large-square {
+            width: 33%; /* Adjust to fit three blocks evenly */
+            background-color: #444;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Maintain space between content */
+            align-items: center;
+            margin: 0 10px; /* Space between squares */
+            height: 500px; /* Fixed height */
+            position: relative;
+            padding: 0; /* Remove padding to ensure full height */
+        }
+
+        .game-preview {
+            width: 33%; /* Adjust to fit three blocks evenly */
+            background-color: #444;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between; /* Maintain space between content */
+            align-items: center;
+            margin: 0 10px; /* Space between squares */
+            height: 500px; /* Fixed height */
+            padding: 0; /* Remove padding to ensure full height */
+        }
+
+        video, .game-image {
+            width: 100%; /* Fill the square */
+            height: 100%; /* Fill the square */
+            object-fit: cover; /* Cover the square */
+        }
+
+        .description {
+            margin: 0; /* Remove margins */
+            padding: 10px; /* Ensure some space around the text */
+            font-size: 14px; /* Keep the font size the same */
+            color: #ddd; /* Light grey text color */
+            background-color: #444; /* Match the grey background with container */
+            text-align: center;
+            width: 100%; /* Make the description take full width */
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
 
         footer {
-            margin-top: auto; /* Pushes footer to the bottom */
+            margin-top: auto;
             padding: 10px;
             text-align: center;
-            color: #aaa; /* Light color for footer */
+            color: #aaa;
         }
     </style>
 </head>
@@ -66,12 +117,32 @@
             <a href="page2.html">Page 2</a>
         </div>
         <div class="logo">
-            <img src="Daco_706586.png" alt="Company Logo"> <!-- Replace with your logo -->
+            <img src="Daco_706586.png" alt="Company Logo">
         </div>
         <div class="button">
             <a href="page3.html">Page 3</a>
         </div>
     </header>
+
+    <div class="content-section">
+        <div class="large-square video-container">
+            <video autoplay loop muted>
+                <source src="snake.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="description">Experience the thrill of the classic Snake game!</p>
+        </div>
+        
+        <div class="game-preview">
+            <img src="9x854mf8m5g91.webp" alt="Game Preview" class="game-image">
+            <p class="description">Discover more adventures in our upcoming titles!</p>
+        </div>
+        
+        <div class="large-square">
+            <img src="kojima+(2).jpg" alt="Other Image" class="game-image">
+            <p class="description">*Snake Eater 3* is written by Hideo Kojima, renowned for his groundbreaking storytelling in video games.</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Your Company. All rights reserved.</p>
