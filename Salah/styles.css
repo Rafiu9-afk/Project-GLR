@@ -90,7 +90,7 @@ body {
 .info h3 a {
     color: black; /* Kleur van de link */
     text-decoration: none; /* Verwijder de onderstreping van de link */
-    display: block; /* Zorg ervoor dat de hele li klikbaar is */
+    display: block; 
 }
 
 */
