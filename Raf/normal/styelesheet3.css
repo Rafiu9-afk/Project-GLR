@@ -1,0 +1,91 @@
+@font-face { font-family:"Minecraftia";
+    src: url('recources/Minecraftia-Regular.ttf') format('truetype'
+    );
+}
+
+body, h1, h2, p, button {
+    font-family: 'Minecraftia', sans-serif; 
+}
+
+body {
+    font-family: Minecraftia , sans-serif;
+    background-image: url('recources/-7gEai.gif');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-image: url('recources/kv00nbjwmhx71.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(119, 10, 74, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid #a52291; 
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.question {
+    background-image: url('recources/Screenshot\ 2024-10-16\ at\ 16.13.02.png');
+    margin-bottom: 20px;
+    padding: 15px; 
+    background-color: #a5a685; 
+    border: 3px solid #a52291; 
+    border-radius: 8px; 
+}
+
+.question label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.answers {
+    margin-bottom: 20px;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #a52291;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-result {
+    display: block;
+    font-size: 1.2em;
+    color: green;
+}
