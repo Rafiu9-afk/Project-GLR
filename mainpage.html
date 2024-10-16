@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>select your game</title>
     <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
-    <div class="carousel">
-        <div class="image-container">
-            <img id="current-image" src="image1.jpg" alt="Image 1"> <!-- Replace with your images -->
-            <img id="next-image" src="image2.jpg" alt="Image 2" class="next-image">
-        </div>
-        <div class="navigation">
-            <button id="prev" class="arrow">❮</button>
-            <button id="next" class="arrow">❯</button>
+    <div class="carousel-container">
+        <div class="carousel">
+            <button class="carousel-arrow left-arrow" onclick="prevImage()">&#10094;</button>
+            <div class="carousel-images">
+                <img src="/mainpage_pictures/sonic game.png" class="carousel-image active" alt="Image 1" id="image1" onclick="buttonClicked(1)">
+                <img src="mainpage_pictures/minecraft game.png" class="carousel-image" alt="Image 2" id="image2" onclick="buttonClicked(2)">
+                <img src="mainpage_pictures/mgs3 game.png" class="carousel-image" alt="Image 3" id="image3" onclick="buttonClicked(3)">
+                <img src="mainpage_pictures/gta game.png" class="carousel-image" alt="Image 4" id="image4" onclick="buttonClicked(4)">
+            </div>
+            <button class="carousel-arrow right-arrow" onclick="nextImage()">&#10095;</button>
         </div>
     </div>
+
     <script src="mainpage.js"></script>
 </body>
 </html>
