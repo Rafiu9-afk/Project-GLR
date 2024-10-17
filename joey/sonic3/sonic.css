@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    background-image: url('your-background-image.jpg'); /* Optional background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+}
+
+#myVideo {
+    width: 600px;
+    display: none; /* Hide video initially */
+}
+
+#playButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
