@@ -1,0 +1,1 @@
+alert("Ik weet niet hoe mijn computer uit moet")
