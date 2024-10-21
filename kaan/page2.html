@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        /* Set the background color to match the second image */
+        body {
+            background-color: #2b2b2b; /* Dark color from the second image */
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        /* Adjust logo size to be more balanced */
+        .header img {
+            max-width: 300px; /* Maximum width for the logo */
+            max-height: 80px;  /* Maximum height for the logo */
+            width: auto;
+            height: auto;
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 10px 15px;
+            background-color: aqua; /* Aqua color for the button */
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 10px;
+            font-size: 1em;
+            text-decoration: none; /* Remove underline from the link */
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+        .button:hover {
+            background-color: #00bcd4; /* Slightly darker aqua on hover */
+        }
+
+        /* Content Section */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto; /* Allow rows to adjust based on content */
+            gap: 20px;
+            padding: 20px;
+            flex-grow: 1; /* To make it expand */
+        }
+
+        .text-field, .image-field {
+            background-color: #6E6E6E; /* Grey background */
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: column; /* Changed to column layout */
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Positioning context for absolute elements */
+            overflow: hidden; /* Hide overflow from images */
+            padding: 20px; /* Padding for spacing */
+            border: 2px solid #fff; /* White border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+        }
+
+        .text-field h2 {
+            margin-bottom: 10px; /* Add space below the title */
+            font-size: 3em; /* Increase font size of the title */
+        }
+
+        /* Ensure images fit within their containers */
+        .image-field img {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the space */
+            border-radius: 10px; /* Rounded corners for the image */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+
+        /* Footer Styling */
+        .footer {
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Ensure boxes are larger and responsive */
+        .content > div {
+            min-height: 200px; /* Minimum height for text and image fields */
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .content > div {
+                min-height: 150px; /* Minimum height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Daco_706586.png" alt="Metal Gear Solid 3 Banner">
+        <a href="page3.html" class="button">
+            &#8594; Go to Page 3 <!-- Arrow symbol as a button -->
+        </a>
+    </div>
+    
+    <div class="content">
+        <div class="text-field">
+            <h2>The Story of Metal Gear Solid 3</h2>
+            <p>Metal Gear Solid 3: Snake Eater transports players to the height of the Cold War in 1964, where they take control of the legendary operative codenamed Naked Snake. The game’s plot blends espionage, personal sacrifice, and political intrigue, creating one of the most memorable stories in the Metal Gear saga.</p>
+        </div>
+        <div class="image-field">
+            <img src="remgs-snakeeater-min (1).webp" alt="Image representing the story">
+        </div>
+        <div class="text-field">
+            <h2>Gameplay Mechanics of Metal Gear Solid 3</h2>
+            <p>Unlike previous entries, Metal Gear Solid 3 introduces survival elements, requiring players to hunt animals for food and heal wounds. These survival mechanics combined with intricate stealth gameplay create a unique and immersive experience.</p>
+        </div>
+        <div class="image-field">
+            <img src="yzrspdh1ats91.webp" alt="Image representing gameplay">
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2024 Your Company. All rights reserved.
+    </div>
+
+    <script>
+        // Add any JavaScript functionality here if needed.
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - Author About Metal Gear Solid 3</title>
+    <style>
+        /* Set the background color to match the previous page */
+        body {
+            background-color: #2b2b2b; /* Dark color */
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        /* Logo Styling */
+        .header img {
+            max-width: 300px; /* Maximum width for the logo */
+            max-height: 80px;  /* Maximum height for the logo */
+            width: auto;
+            height: auto;
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 10px 15px;
+            background-color: aqua; /* Aqua color for the button */
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 10px;
+            font-size: 1em;
+            text-decoration: none; /* Remove underline from the link */
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+        .button:hover {
+            background-color: #00bcd4; /* Slightly darker aqua on hover */
+        }
+
+        /* Content Section */
+        .content {
+            display: flex; /* Use flex for the entire content */
+            padding: 20px;
+            flex-grow: 1; /* To make it expand */
+            gap: 20px; /* Space between columns */
+        }
+
+        .text-field, .image-field {
+            flex: 1; /* Allow both fields to take equal space */
+            background-color: #6E6E6E; /* Grey background */
+            display: flex;
+            flex-direction: column; /* Column layout */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Hide overflow from images */
+            padding: 20px; /* Padding */
+            border: 2px solid #fff; /* White border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+        }
+
+        .text-field h2 {
+            margin-bottom: 10px; /* Add space below the title */
+            font-size: 3em; /* Increase font size of the title */
+            text-align: center; /* Center text */
+        }
+
+        .text-field p {
+            text-align: center; /* Center text */
+            padding: 10px; /* Add padding for readability */
+            font-size: 2em; /* Larger font size for text */
+        }
+
+        /* Ensure images fit within their containers */
+        .image-field img {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the space */
+            border-radius: 10px; /* Rounded corners for the image */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+
+        /* Footer Styling */
+        .footer {
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack content vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Daco_706586.png" alt="Metal Gear Solid 3 Logo"> <!-- Keep the logo -->
+        <a href="end.html" class="button">
+            &#8594; Go to End Page <!-- Arrow symbol as a button -->
+        </a>
+    </div>
+    
+    <div class="content">
+        <div class="text-field">
+            <h2>About the Author</h2>
+            <p>The author of *Metal Gear Solid 3: Snake Eater* is Hideo Kojima, a renowned video game designer and director. Known for his innovative storytelling and complex narratives, Kojima has created a legacy within the gaming industry. He often explores themes of war, identity, and the human condition, with *Metal Gear Solid 3* serving as a quintessential example of his artistry. This installment is celebrated for its rich character development, deep philosophical undertones, and the seamless integration of gameplay and storytelling.</p>
+        </div>
+        <div class="image-field">
+            <img src="Hideo-Kojima.webp" alt="Image representing Hideo Kojima">
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2024 Your Company. All rights reserved.
+    </div>
+
+    <script>
+        // Add any JavaScript functionality here if needed.
+    </script>
+</body>
+</html>
