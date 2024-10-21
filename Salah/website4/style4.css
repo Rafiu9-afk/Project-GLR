@@ -1,0 +1,59 @@
+body {
+    background-image:url('/Salah/Images/gta-san-andreas-background-2e4ouzofm0i7w6r9.jpg') ;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+   left: 5%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.header {
+    color: rgb(0, 0, 0);
+   padding-left: 15px;
+   size-adjust: 10px;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+   
+   
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.video-container {
+    margin: 60px auto;
+    width: 80%;
+    max-width: 1000px;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: 10px gray;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.informatiezebi
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.informatiezebi:hover{
+    cursor: pointer;
+    
+}
+
+
+
