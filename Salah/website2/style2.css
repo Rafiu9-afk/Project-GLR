@@ -20,7 +20,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 3.0em;
     text-transform: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Old English Text MT', serif;
 }
 
 /* Menu style */
@@ -40,7 +40,7 @@ ul {
     font-size: 2.5em;
     margin-bottom: 20px;
     position: relative;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Old English Text MT', serif;
     cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ ul {
     font-size: 3.0em;
     text-decoration: none;
     text-transform: lowercase;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Old English Text MT', serif;
     cursor: pointer;
 }
 
