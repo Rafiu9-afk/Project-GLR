@@ -10,5 +10,5 @@ function startGame() {
 }
 function goToMainPage() {
     // Replace 'main-page.html' with the actual main page URL
-    window.location.href ='mainpage.html';
+    window.location.href = '../mainpage.html'; 
 }
