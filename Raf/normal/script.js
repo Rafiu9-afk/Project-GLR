@@ -12,10 +12,7 @@ function displayQuote() {
   document.getElementById("quote").innerHTML = Quotes[num];
 }
 
-function btnMinecraft() {
-  var sound = document.getElementById("btnAudioClick");
-  sound.play();
-}
+
 
 function CloseSelection(id) {    
   window.returnValue = id;

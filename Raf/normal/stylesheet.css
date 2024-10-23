@@ -29,6 +29,12 @@ body {
     margin-bottom: 10px;
     max-width: 400px;
 }
+.secondBtn {
+    margin-bottom: 10px;
+}
+.thirdBtn {
+    margin-bottom: 10px;
+}
 
 .textBtn {
     padding: 10px;
@@ -45,7 +51,37 @@ input[type="submit"],
 .mainBtn,
 .secondBtn {
     border: 2px solid #000;
-    webkit-box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    background: #999
+        url("https://i48.servimg.com/u/f48/18/06/99/75/bgbtn10.png");
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+    font-size: 15px;
+    cursor: context-menu;
+    image-rendering: pixelated;
+}
+.thirdBtn {
+    border: 2px solid #000;
+   box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    background: #999
+        url("https://i48.servimg.com/u/f48/18/06/99/75/bgbtn10.png");
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+    cursor: context-menu;
+    image-rendering: pixelated;
+}
+.fourthBtn {
+    border: 2px solid #000;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
     background: #999
         url("https://i48.servimg.com/u/f48/18/06/99/75/bgbtn10.png");
@@ -60,6 +96,20 @@ input[type="submit"],
 }
 .mainBtn:hover .textBtn,
 .secondBtn:hover .textBtn {
+    background-color: rgba(100, 100, 255, 0.45);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    color: #ffff7c;
+}
+.thirdBtn:hover .textBtn {
+    background-color: rgba(100, 100, 255, 0.45);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    color: #ffff7c;
+}
+.fourthBtn:hover .textBtn {
     background-color: rgba(100, 100, 255, 0.45);
     height: 100%;
     width: 100%;
@@ -93,7 +143,10 @@ input[type="submit"],
     width: 100%;
     max-width: 400px;
 }
-
+.thirdBtn {
+    width: 100%;
+    max-width: 400px;
+}
 .backgroundMainMenu {
     position: fixed;
     top: 0;
@@ -155,5 +208,3 @@ img {
     width: 900px;
     height: 150px;
 }
-
-   

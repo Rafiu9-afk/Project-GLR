@@ -7,8 +7,7 @@ function showResult() {
         q1: 'a',  
         q2: 'a',  
         q3: 'b',
-        q4: 'c'   
-    };
+           };
 
    
     const formData = new FormData(quizForm);

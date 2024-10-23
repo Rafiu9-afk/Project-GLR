@@ -1,0 +1,41 @@
+   
+   html, body {
+    background-image:url(recources/th.jpeg);
+    height: 100%;
+    margin: 0; 
+    overflow: hidden; 
+}
+
+
+iframe {
+    width: 100%;
+    height: 90%;
+    border: none; 
+}
+.homeBtn {
+    border: 2px solid #000;
+    webkit-box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    background: #999
+        url("https://i48.servimg.com/u/f48/18/06/99/75/bgbtn10.png");
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+    cursor: context-menu;
+    image-rendering: pixelated;
+}
+.homeBtn:hover .textBtn {
+    background-color: rgba(100, 100, 255, 0.45);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    color: #ffff7c;
+}
+.homeBtn {
+    width: 100%;
+    max-width: 400px;
+    
+}

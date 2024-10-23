@@ -5,13 +5,15 @@
     <link rel="stylesheet" href="styelesheet3.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MC Quiz</title>
+    <title>Minecraft Quiz</title>
 </head>
 
    
 <body>
-   
-   
+    <audio autoplay loop style="display: none;">
+        <source src="./recources/Minecraft - Pigstep Orchestral Cover.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
    
    
    <form id="quizForm">
@@ -45,22 +47,15 @@
             </div>
         </div>
 
-        <div class="question">
-            <h2>Wat voor game is Minecraft</h2>
-            <div class="answers">
-                <label><input type="radio" name="q4" value="a"> Rpg</label>
-                <label><input type="radio" name="q4" value="b"> Platformer</label>
-                <label><input type="radio" name="q4" value="c"> Sandbox</label>
-                <label><input type="radio" name="q4" value="d"> Fps</label>
-            </div>
-        </div>
-
         <button type="button" onclick="showResult()">Submit</button>
 
         <div id="result" class="result">
-            Je score: <span id="score">0</span>/4
+            Je score: <span id="score">0</span>/3
         </div>
     </form>
+</div>
+<div>
+    <button onclick="window.location.href='Minecraft.html'">Terug naar Hoofdpagina</button>
 </div>
 </body>
 </html>

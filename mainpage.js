@@ -1,11 +1,11 @@
 let currentImageIndex = 0;
-const images = document.querySelectorAll('.carousel-image');
+const images = document.querySelectorAll(".carousel-image");
 
 function showImage(index) {
     images.forEach((img, i) => {
-        img.classList.remove('active');
+        img.classList.remove("active");
         if (i === index) {
-            img.classList.add('active');
+            img.classList.add("active");
         }
     });
 }
@@ -24,6 +24,18 @@ function buttonClicked(imageIndex) {
    
 }
 
-// Initialize the first image as active
 showImage(currentImageIndex);
 
+function buttonClicked(imageIndex) {
+    if (imageIndex === 1) {
+        window.location.href = "../joey/sonic1/sonic.html";
+    } else if (imageIndex === 2) {
+        window.location.href = "../Raf/normal/Minecraft.html";
+
+        
+    } else if (imageIndex === 3) {
+        window.location.href = "../kaan/page1.html";
+    } else if (imageIndex === 4) {
+        window.location.href = "../Salah/website1/index.html";
+    }
+}
