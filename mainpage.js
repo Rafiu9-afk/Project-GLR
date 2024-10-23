@@ -21,7 +21,7 @@ function prevImage() {
 }
 
 function buttonClicked(imageIndex) {
-    alert(`Button for Image ${imageIndex} clicked!`);
+   
 }
 
 // Initialize the first image as active
