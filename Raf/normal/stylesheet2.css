@@ -29,5 +29,22 @@ body {
     z-index: 10; 
 }
 
+.minecraftBtn {
+    border: 2px solid #000;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+    background: #999 url("https://i48.servimg.com/u/f48/18/06/99/75/bgbtn10.png");
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
+    image-rendering: pixelated;
+}
+
 
 
