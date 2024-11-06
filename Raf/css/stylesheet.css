@@ -196,7 +196,7 @@ input[type="submit"],
     text-align: right;
 }
 
-@-webkit-keyframes subtitle {
+@keyframes subtitle {
     0% {
         transform: scale(0.875) rotate(-20deg);
     }

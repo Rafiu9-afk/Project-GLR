@@ -30,7 +30,7 @@ function buttonClicked(imageIndex) {
     if (imageIndex === 1) {
         window.location.href = "../joey/sonic1/sonic.html";
     } else if (imageIndex === 2) {
-        window.location.href = "../Raf/normal/Minecraft.html";
+        window.location.href = "../Raf/pagina's/Minecraft.html";
 
         
     } else if (imageIndex === 3) {
