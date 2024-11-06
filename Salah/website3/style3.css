@@ -33,7 +33,7 @@ body {
 }
 
 .main-menu-link:hover {
-    color: gray; /* Verandert de kleur bij hover */
+    color: gray; 
 }
 
 .left-section {

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('/Salah/Images/gta\ san\ andreas.jpg'); /* Update this with the correct path */
+    background-image: url('/Salah/Images/gta\ san\ andreas.jpg'); 
     background-size: cover;
     background-position: center;
     font-family: 'Old English Text MT', serif;
@@ -60,16 +60,16 @@ body {
     text-align: center;
 }
 
-/* Animatie definitie */
+
 @keyframes fade-in-out {
     0% {
-        opacity: 1; /* Volledige zichtbaarheid */
+        opacity: 1; 
     }
     50% {
-        opacity: 0; /* Vervagen naar onzichtbaar */
+        opacity: 0;
     }
     100% {
-        opacity: 1; /* Terug naar volledige zichtbaarheid */
+        opacity: 1; 
     }
 }
 
@@ -81,21 +81,21 @@ body {
     position: relative;
 }
 
-/* Specifieke stijl voor actieve optie "Options" */
+
 .options li.active {
     color: rgb(0, 0, 0);
     border: 2px solid green;
     padding: 5px;
     border-radius: 5px;
     text-shadow: 2px 2px 3px #ffffff;
-    animation: fade-in-out 2s infinite; /* Voeg animatie toe voor "Options" */
+    animation: fade-in-out 2s infinite; 
 }
 
-/* Link stijl */
+
 .options li a,
 .info h3 a {
-    color: black; /* Kleur van de link */
-    text-decoration: none; /* Verwijder de onderstreping van de link */
+    color: black; 
+    text-decoration: none;
     display: block; 
 }
 
@@ -108,8 +108,8 @@ body {
 
 .info {
     position: absolute;
-    bottom: 5%; /* Positioneer naar beneden */
-    left: 5%; /* Positioneer naar links */
+    bottom: 5%; 
+    left: 5%; 
 }
 
 .info h3 {

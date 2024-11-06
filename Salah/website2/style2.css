@@ -12,7 +12,7 @@ body {
     position: relative;
 }
 
-/* Position the options text in the top left */
+
 .title {
     position: absolute;
     top: 20px;
@@ -23,7 +23,7 @@ body {
     font-family: 'Old English Text MT', serif;
 }
 
-/* Menu style */
+
 .menu {
     text-align: left;
     position: relative;
@@ -66,7 +66,7 @@ ul {
     background-color: #00ff00;
 }
 
-/* Position Main menu at bottom left */
+
 .footer {
     position: absolute;
     bottom: 20px;
